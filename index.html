@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+  .container{
+    border: 2px solid;
+    padding: 50px;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 400px;
+    background-color: aqua;
+    border-radius: 20px;
+  }
+#email
+{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+    width:400px;
+    padding: 10px;
+}
+
+#pwd
+{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+    width:400px;
+    padding: 10px;
+}
+#btn
+{
+    width:100px;
+    padding: 10px;
+}
+
+</style>
+<body>
+  <div class="container">
+  <form>
+    <label>Email</label>
+    <br>
+    <input type="text"  id="email" placeholder="Example@email.com"><br>
+    <div disabled id="messageemail"></div>
+    <br>
+
+    <label>Password</label><br>
+    <input type="password" id="pwd" placeholder="Your password" ><br>
+    <div disabled id="message"></div>
+    <div disabled id="messagepassword"></div>
+    <br>
+
+    <button id="btn" onclick="geek()">Submit</button>
+  </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
